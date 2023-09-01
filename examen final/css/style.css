@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background: linear-gradient(rgb(81, 235, 81),rgb(255, 255, 255),rgb(81, 235, 81));
+}
+.body1{
+    background: linear-gradient(cyan, black ,cyan);
+}
+.body2{
+    background: linear-gradient(cyan, rgb(196, 172, 172) ,cyan);
+}
+.body3{
+    background: linear-gradient(cyan, rgb(209, 138, 44) ,cyan);
+}
+.body__contacto{
+    background: linear-gradient(cyan, white ,cyan);
+}
+.logo__cabezera{
+    border-radius: 40%;
+    width: 150px;
+    height: 115px;
+    margin: -20px -20px -20px 0px;
+}
+.cabezera{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+nav{
+    text-align: center;
+}
+.menu{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-size: 45px;
+    padding: 10px 15px;
+    font-style: italic;
+    text-decoration: none;
+    margin: 20px;
+}
+.sectionImage{
+    padding: 15px 8px;
+    background-color: #9cd4dd;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "n1 n2 n4 n5"
+    "n1 n3 n4 n6";
+    gap: 12px;
+    & img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 13px;
+        border: 8px solid #fff;
+    }
+    #img1{
+        grid-area: n1;
+    }
+    #img2{
+        grid-area: n2;
+    }
+    #img3{
+        grid-area: n3;
+    }
+    #img4{
+        grid-area: n4;
+    }
+    #img5{
+        grid-area: n5;
+    }
+    #img6{
+        grid-area: n6;
+    }
+}
+.carousel-inner{
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+}
+.noticias{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.quienes__somos{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+.estadisticas{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+.contenido__text {
+    font-family: cursive;
+    font-style: italic;
+    font-size: 15px;
+    color: black;
+}
+.footer1{
+    text-align: center;
+    background: linear-gradient(rgb(56, 73, 146),rgb(255, 255, 255),rgb(56, 73, 146));
+}
+.footer__texto{
+    font-family: cursive;
+    font-style: italic;
+    font-size: 30px;
+    color: black;
+}
+.contacto {
+    padding: 20px;
+}
+
+.contacto form {
+    margin-top: 20px;
+}
+
+.contacto form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contacto form input[type="text"],
+.contacto form input[type="email"],
+.contacto form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contacto form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.redes__sociales {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.redes__sociales img {
+    margin: 0 10px;
+    width: 30px;
+    height: 30px;
+}
